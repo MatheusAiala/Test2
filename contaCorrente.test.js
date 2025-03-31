@@ -15,6 +15,9 @@ test("Os saltos das contas criadas devem ser diferentes", () => {
     const contaMaria = new ContaCorrente("Maria", 200);
     const contaJose =  new ContaCorrente("José", 100);
 
+    expect(contaMaria.balanco).not.toBe(contaJose.balanco);
+
+
 });
 
 test("Ao realizar um saque de R$100 na conta de Maria, o saldo deve ser igual ao saldo de José", () =>{
